@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>392</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-7</y>
+      <width>673</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#widget4{background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));
+
+
+
+
+}</string>
+    </property>
+    <widget class="QFrame" name="frame4">
+     <property name="geometry">
+      <rect>
+       <x>147</x>
+       <y>42</y>
+       <width>330</width>
+       <height>323</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#frame4{background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));
+
+
+background-image: url(:/k/datascience.jpg);
+border-radius:7px;
+border: 3px solid #8ad2d5;
+
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLineEdit" name="name">
+      <property name="geometry">
+       <rect>
+        <x>91</x>
+        <y>28</y>
+        <width>148</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#name{
+border-radius:5px;
+	background-color: rgb(179, 242, 255);
+
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="type">
+      <property name="geometry">
+       <rect>
+        <x>91</x>
+        <y>77</y>
+        <width>148</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#type
+{
+border-radius:5px;
+	background-color: rgb(179, 242, 255);
+
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Type</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="creater">
+      <property name="geometry">
+       <rect>
+        <x>112</x>
+        <y>259</y>
+        <width>106</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#creater{
+border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));}</string>
+      </property>
+      <property name="text">
+       <string>Create</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="adjust">
+      <property name="geometry">
+       <rect>
+        <x>91</x>
+        <y>126</y>
+        <width>148</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#adjust{
+border-radius:5px;
+	background-color: rgb(179, 242, 255);
+
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Adjust</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="limit">
+      <property name="geometry">
+       <rect>
+        <x>91</x>
+        <y>175</y>
+        <width>148</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#limit
+{
+border-radius:5px;
+	background-color: rgb(179, 242, 255);
+
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Limit</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>224</y>
+        <width>47</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>224</x>
+       <y>14</y>
+       <width>183</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#label_2{ font: 16pt &quot;NSimSun&quot;;
+color: rgb(0,0,0);}</string>
+     </property>
+     <property name="text">
+      <string>Create a relation</string>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="home">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>0</y>
+       <width>36</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="tes.qrc">
+       <normaloff>:/ok/home.png</normaloff>:/ok/home.png</iconset>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="ok.qrc"/>
+  <include location="tes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

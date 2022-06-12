@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>663</width>
+    <height>381</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-7</y>
+      <width>666</width>
+      <height>386</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#widget{background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));
+
+
+
+
+}</string>
+    </property>
+    <widget class="QFrame" name="frame4_2">
+     <property name="geometry">
+      <rect>
+       <x>112</x>
+       <y>42</y>
+       <width>449</width>
+       <height>316</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#frame4_2{
+	background-image: url(:/t/datascience.jpg);
+
+
+
+border-radius:7px;
+border: 3px solid #8ad2d5;
+
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="createmolecular">
+      <property name="geometry">
+       <rect>
+        <x>175</x>
+        <y>266</y>
+        <width>106</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#createmolecular{
+border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));}
+
+QPushButton#createmolecular:hover{
+	background-color: rgb(228, 250, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Create</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="label">
+      <property name="geometry">
+       <rect>
+        <x>175</x>
+        <y>14</y>
+        <width>92</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Label</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>21</x>
+        <y>119</y>
+        <width>113</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Select node</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>175</x>
+        <y>70</y>
+        <width>113</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Select relation</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="relation">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>175</x>
+        <y>84</y>
+        <width>92</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox#relation{
+background-color: rgb(205, 249, 255);}</string>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string>r1</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string>r1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>r2</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QListWidget" name="nodeset">
+      <property name="geometry">
+       <rect>
+        <x>168</x>
+        <y>133</y>
+        <width>92</width>
+        <height>92</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget#nodeset{
+border-radius: 10px;
+background-color: rgb(207, 245, 255);
+border-radius:7px;
+border: 3px solid #8ad2d5;
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>n1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>n2</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>175</x>
+        <y>119</y>
+        <width>113</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Node Set</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addnode">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>168</y>
+        <width>57</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#addnode{
+border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));}
+
+QPushButton#addnode:hover{
+	background-color: rgb(228, 250, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Add node</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="nodes">
+      <property name="geometry">
+       <rect>
+        <x>21</x>
+        <y>133</y>
+        <width>78</width>
+        <height>92</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget#nodes{
+border-radius: 10px;
+background-color: rgb(207, 245, 255);
+border-radius:7px;
+border: 3px solid #8ad2d5;
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>n1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>n2</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QListWidget" name="cablesets">
+      <property name="geometry">
+       <rect>
+        <x>329</x>
+        <y>133</y>
+        <width>99</width>
+        <height>92</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget#cablesets{
+border-radius: 10px;
+background-color: rgb(207, 245, 255);
+border-radius:7px;
+border: 3px solid #8ad2d5;
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>r1:n1,n2</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>329</x>
+        <y>119</y>
+        <width>113</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Cable sets</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addset">
+      <property name="geometry">
+       <rect>
+        <x>266</x>
+        <y>168</y>
+        <width>57</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#addset{
+border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));}
+
+QPushButton#addset:hover{
+	background-color: rgb(228, 250, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Add Set</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="remove">
+      <property name="geometry">
+       <rect>
+        <x>203</x>
+        <y>196</y>
+        <width>50</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#remove{
+border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));}
+
+QPushButton#remove:hover{
+	background-color: rgb(228, 250, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Remove</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="type">
+      <property name="geometry">
+       <rect>
+        <x>175</x>
+        <y>42</y>
+        <width>92</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(207, 245, 255);</string>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string>Type</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>259</x>
+       <y>14</y>
+       <width>169</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#label_5{ font: 16pt &quot;NSimSun&quot;;
+color: rgb(0,0,0);}</string>
+     </property>
+     <property name="text">
+      <string>Molecular node</string>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="home">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>7</y>
+       <width>36</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="tes.qrc">
+       <normaloff>:/ok/home.png</normaloff>:/ok/home.png</iconset>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="back">
+     <property name="geometry">
+      <rect>
+       <x>63</x>
+       <y>14</y>
+       <width>36</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCommandLinkButton{
+	background-color: rgb(210, 249, 255);
+
+border-style: outset;
+border-radius: 10px;
+
+}
+QCommandLinkButton:hover{
+	background-color: rgb(82, 159, 167);
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../tes.qrc">
+       <normaloff>:/ok/backarrow.png</normaloff>:/ok/backarrow.png</iconset>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="one.qrc"/>
+  <include location="tes.qrc"/>
+  <include location="../tes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

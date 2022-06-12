@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>657</width>
+    <height>443</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-7</x>
+      <y>-14</y>
+      <width>666</width>
+      <height>596</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#widget{background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));}</string>
+    </property>
+    <widget class="QGraphicsView" name="gview">
+     <property name="geometry">
+      <rect>
+       <x>175</x>
+       <y>7</y>
+       <width>575</width>
+       <height>435</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgb(225, 250, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>259</x>
+       <y>21</y>
+       <width>302</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#label{ font: 10pt &quot;NSimSun&quot;;
+color: rgb(0,0,0);}</string>
+     </property>
+     <property name="text">
+      <string>Click here to set the location of the object</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="straightwire">
+     <property name="geometry">
+      <rect>
+       <x>259</x>
+       <y>392</y>
+       <width>78</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgb(229, 249, 255);</string>
+     </property>
+     <property name="text">
+      <string>Straight wire</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="leftwire">
+     <property name="geometry">
+      <rect>
+       <x>189</x>
+       <y>392</y>
+       <width>64</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgb(229, 249, 255);</string>
+     </property>
+     <property name="text">
+      <string>Left wire</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="rightwire">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>392</y>
+       <width>71</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgb(229, 249, 255);</string>
+     </property>
+     <property name="text">
+      <string>Right wire</string>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="home">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>7</y>
+       <width>29</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="tes.qrc">
+       <normaloff>:/ok/home.png</normaloff>:/ok/home.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="success">
+     <property name="geometry">
+      <rect>
+       <x>308</x>
+       <y>329</y>
+       <width>176</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+color: rgb(3, 223, 0);
+
+font: 10pt &quot;NSimSun&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="reset">
+     <property name="geometry">
+      <rect>
+       <x>609</x>
+       <y>392</y>
+       <width>50</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#reset{
+	background-color: rgb(60, 104, 120);
+border-radius: 10px;
+color: rgb(255,255,255);
+}
+
+QPushButton#reset:hover{
+	background-color: rgb(228, 250, 255);
+color: rgb(0,0,0);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Reset</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="menu" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>169</width>
+      <height>435</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#menu{
+	background-color: rgb(99, 175, 198);
+
+	
+border-radius: 10px;}</string>
+    </property>
+    <widget class="QComboBox" name="basebox">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>49</y>
+       <width>92</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <property name="currentText">
+      <string>Base nodes</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="relationboxx">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>273</y>
+       <width>92</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <property name="currentText">
+      <string>Relation</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buildnetwork">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>371</y>
+       <width>134</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#buildnetwork{
+	background-color: rgb(60, 104, 120);
+border-radius: 10px;
+color: rgb(255,255,255);
+}
+
+QPushButton#buildnetwork:hover{
+	background-color: rgb(228, 250, 255);
+color: rgb(0,0,0);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Build Network</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="existingbase">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>28</y>
+       <width>71</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox#existingbase{ font: 10pt &quot;NSimSun&quot;;
+color: rgb(0,0,0);}</string>
+     </property>
+     <property name="text">
+      <string>Existing</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="newmolecular">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>161</y>
+       <width>99</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox#newmolecular{ font: 12pt &quot;NSimSun&quot;;
+	
+	text-decoration: underline;
+color: rgb(0,0,255);}</string>
+     </property>
+     <property name="text">
+      <string>MOLECULAR</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="existingwire">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>252</y>
+       <width>99</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox#existingwire{ font: 10pt &quot;NSimSun&quot;;
+color: rgb(0,0,0);}</string>
+     </property>
+     <property name="text">
+      <string>Existing</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>0</y>
+       <width>120</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#label_2{ 
+	text-decoration: underline;
+	
+	font: 7pt &quot;Segoe UI&quot;;
+color: rgb(255,255,255);}</string>
+     </property>
+     <property name="text">
+      <string>CHECK AN OBJECT TO DRAW</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="molecularlabel">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>182</y>
+       <width>92</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Label</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>70</y>
+       <width>22</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#label_4{ font: 10pt &quot;NSimSun&quot;;
+color: rgb(0,255,0);}</string>
+     </property>
+     <property name="text">
+      <string>OR</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="baselabel">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>91</y>
+       <width>92</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Label</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>56</x>
+       <y>14</y>
+       <width>36</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#label_5{ font: 13pt &quot;NSimSun&quot;;
+	
+	text-decoration: underline;
+color: rgb(0,255,0);}</string>
+     </property>
+     <property name="text">
+      <string>BASE</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="newbase">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>70</y>
+       <width>43</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox#newbase{ font: 10pt &quot;NSimSun&quot;;
+color: rgb(0,0,0);}</string>
+     </property>
+     <property name="text">
+      <string>New</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>49</x>
+       <y>238</y>
+       <width>36</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#label_6{ font: 13pt &quot;NSimSun&quot;;
+	
+	text-decoration: underline;
+color: rgb(255,0,0);}</string>
+     </property>
+     <property name="text">
+      <string>WIRE</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>294</y>
+       <width>22</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#label_7{ font: 10pt &quot;NSimSun&quot;;
+color: rgb(255,0,0);}</string>
+     </property>
+     <property name="text">
+      <string>OR</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="newwire">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>294</y>
+       <width>78</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox#newwire{ font: 10pt &quot;NSimSun&quot;;
+color: rgb(0,0,0);}</string>
+     </property>
+     <property name="text">
+      <string>New</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="relationlabel">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>315</y>
+       <width>92</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Label</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="typelabel">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>343</y>
+       <width>92</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Type</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="opened">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>112</y>
+       <width>57</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox#opened{ font: 10pt &quot;NSimSun&quot;;
+color: rgb(0,0,0);}</string>
+     </property>
+     <property name="text">
+      <string>Opened</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="basetype">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>133</y>
+       <width>92</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <property name="currentText">
+      <string>Type</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="moleculartype">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>210</y>
+       <width>92</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <property name="currentText">
+      <string>Type</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../tes.qrc"/>
+  <include location="../h.qrc"/>
+  <include location="tes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

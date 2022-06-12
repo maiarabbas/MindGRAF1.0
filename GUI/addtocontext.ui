@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>657</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame5">
+    <property name="geometry">
+     <rect>
+      <x>-7</x>
+      <y>-21</y>
+      <width>666</width>
+      <height>414</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#frame5{background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="widget5" native="true">
+     <property name="geometry">
+      <rect>
+       <x>112</x>
+       <y>63</y>
+       <width>449</width>
+       <height>316</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#widget5{
+	background-image: url(:/k/datascience.jpg);
+
+
+border-radius:5px;
+border: 3px solid #8ad2d5;}</string>
+     </property>
+     <widget class="QLabel" name="label3">
+      <property name="geometry">
+       <rect>
+        <x>91</x>
+        <y>77</y>
+        <width>106</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 8pt &quot;Arial Rounded MT Bold&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>Choose proposition</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="proplist">
+      <property name="geometry">
+       <rect>
+        <x>91</x>
+        <y>91</y>
+        <width>113</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QListWidget#proplist
+{
+	background-color: rgb(207, 245, 255);
+border-radius:5px;
+border: 3px solid #8ad2d5;
+	
+
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>p1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>p2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>p3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>p4</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="add">
+      <property name="geometry">
+       <rect>
+        <x>161</x>
+        <y>259</y>
+        <width>134</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#add{
+border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));}
+
+
+QPushButton#add:hover{
+	background-color: rgb(212, 250, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="contexts">
+      <property name="geometry">
+       <rect>
+        <x>189</x>
+        <y>28</y>
+        <width>78</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox#contexts{
+	background-color: rgb(213, 255, 255);
+}</string>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string>real world</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>real world</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>myth</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QListWidget" name="allsets">
+      <property name="geometry">
+       <rect>
+        <x>245</x>
+        <y>91</y>
+        <width>162</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QListWidget#allsets{
+	background-color: rgb(207, 245, 255);
+border-radius:5px;
+border: 3px solid #8ad2d5;
+	
+
+}</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>266</x>
+        <y>77</y>
+        <width>106</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+color: rgb(255, 255, 255);
+font: 8pt &quot;Arial Rounded MT Bold&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>Choose attitude set</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label3_2">
+      <property name="geometry">
+       <rect>
+        <x>189</x>
+        <y>14</y>
+        <width>106</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 8pt &quot;Arial Rounded MT Bold&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>Choose context</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>259</x>
+       <y>35</y>
+       <width>162</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#label_3{ font: 16pt &quot;NSimSun&quot;;
+color: rgb(0,0,0);}</string>
+     </property>
+     <property name="text">
+      <string>Add to context</string>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="home">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>21</y>
+       <width>36</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="tes.qrc">
+       <normaloff>:/ok/home.png</normaloff>:/ok/home.png</iconset>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="ok.qrc"/>
+  <include location="tes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

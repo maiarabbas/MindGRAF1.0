@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>653</width>
+    <height>364</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-5</y>
+      <width>659</width>
+      <height>386</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#widget{background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));}</string>
+    </property>
+    <widget class="QListWidget" name="relationlist">
+     <property name="geometry">
+      <rect>
+       <x>245</x>
+       <y>77</y>
+       <width>134</width>
+       <height>148</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QListWidget#relationlist
+{
+	background-color: rgb(207, 245, 255);
+border-radius:5px;
+border: 3px solid #007b94;
+	
+
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>r1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>r2</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>245</x>
+       <y>63</y>
+       <width>113</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0,0,0);</string>
+     </property>
+     <property name="text">
+      <string> Choose relation</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="createbackwardb">
+     <property name="geometry">
+      <rect>
+       <x>259</x>
+       <y>266</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#createbackwardb{
+	color: rgb(255, 255, 255);
+border-radius: 10px;
+
+	background-color: rgb(0, 123, 148);
+
+}
+QPushButton#createbackwardb:hover{
+	background-color: rgb(212, 250, 255);
+color: rgb(0,0,0);
+}</string>
+     </property>
+     <property name="text">
+      <string>Create Backward Unit</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="createforwardb">
+     <property name="geometry">
+      <rect>
+       <x>259</x>
+       <y>231</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#createforwardb{
+	color: rgb(255, 255, 255);
+border-radius: 10px;
+
+	background-color: rgb(0, 123, 148);
+
+}
+QPushButton#createforwardb:hover{
+	background-color: rgb(212, 250, 255);
+color: rgb(0,0,0);
+}</string>
+     </property>
+     <property name="text">
+      <string>Create Forward Unit</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>175</x>
+       <y>21</y>
+       <width>323</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#label{ font: 16pt &quot;NSimSun&quot;;
+color: rgb(0,0,0);}</string>
+     </property>
+     <property name="text">
+      <string>Forward &amp; Backward unit path</string>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="home">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>7</y>
+       <width>29</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="tes.qrc">
+       <normaloff>home.png</normaloff>home.png</iconset>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="tes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

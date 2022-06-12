@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>647</width>
+    <height>373</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-7</x>
+      <y>-5</y>
+      <width>659</width>
+      <height>386</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#widget{background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));}
+</string>
+    </property>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>196</x>
+       <y>63</y>
+       <width>113</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+QLabel#label_6{ font: 9pt &quot;NSimSun&quot;;
+color: rgb(0,0,0);}</string>
+     </property>
+     <property name="text">
+      <string> Choose two paths</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>203</x>
+       <y>91</y>
+       <width>36</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0,0,0);</string>
+     </property>
+     <property name="text">
+      <string>Path 1</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="nodelist">
+     <property name="geometry">
+      <rect>
+       <x>357</x>
+       <y>84</y>
+       <width>113</width>
+       <height>127</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QListWidget#nodelist
+{
+	background-color: rgb(207, 245, 255);
+border-radius:5px;
+border: 3px solid #007b94;
+	
+
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>n1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>n2</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>357</x>
+       <y>63</y>
+       <width>113</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QLabel#label_8{ font: 9pt &quot;NSimSun&quot;;
+color: rgb(0,0,0);}</string>
+     </property>
+     <property name="text">
+      <string>Choose node</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="createdomain">
+     <property name="geometry">
+      <rect>
+       <x>259</x>
+       <y>259</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#createdomain{
+	color: rgb(255, 255, 255);
+border-radius: 10px;
+
+	background-color: rgb(0, 123, 148);
+
+}
+QPushButton#createdomain:hover{
+	background-color: rgb(212, 250, 255);
+color: rgb(0,0,0);
+}</string>
+     </property>
+     <property name="text">
+      <string>Create Domain</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="createrange">
+     <property name="geometry">
+      <rect>
+       <x>259</x>
+       <y>301</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#createrange{
+	color: rgb(255, 255, 255);
+border-radius: 10px;
+
+	background-color: rgb(0, 123, 148);
+
+}
+QPushButton#createrange:hover{
+	background-color: rgb(212, 250, 255);
+color: rgb(0,0,0);
+}</string>
+     </property>
+     <property name="text">
+      <string>Create Range</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>7</y>
+       <width>246</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#label{ font: 16pt &quot;NSimSun&quot;;
+color: rgb(0,0,0);}</string>
+     </property>
+     <property name="text">
+      <string>Domain &amp; Range Restrict</string>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="home">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>0</y>
+       <width>29</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="tes.qrc">
+       <normaloff>:/ok/home.png</normaloff>:/ok/home.png</iconset>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="p1">
+     <property name="geometry">
+      <rect>
+       <x>203</x>
+       <y>105</y>
+       <width>78</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox#p1{background-color: rgb(206, 245, 255);}</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="p2">
+     <property name="geometry">
+      <rect>
+       <x>203</x>
+       <y>161</y>
+       <width>78</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox#p2{background-color: rgb(206, 245, 255);}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>203</x>
+       <y>140</y>
+       <width>50</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0,0,0);</string>
+     </property>
+     <property name="text">
+      <string>Path 2</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="tes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

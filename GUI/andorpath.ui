@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>364</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-35</x>
+      <y>-7</y>
+      <width>715</width>
+      <height>386</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#widget{background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));}</string>
+    </property>
+    <widget class="QListWidget" name="pathlist">
+     <property name="geometry">
+      <rect>
+       <x>196</x>
+       <y>84</y>
+       <width>120</width>
+       <height>148</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QListWidget#pathlist
+{
+	background-color: rgb(207, 245, 255);
+border-radius:5px;
+border: 3px solid #007b94;
+	
+
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>p1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>p2</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QListWidget" name="currentlist">
+     <property name="geometry">
+      <rect>
+       <x>399</x>
+       <y>84</y>
+       <width>120</width>
+       <height>148</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QListWidget#currentlist
+{
+	background-color: rgb(207, 245, 255);
+border-radius:5px;
+border: 3px solid #007b94;
+	
+
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>p3</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="createor">
+     <property name="geometry">
+      <rect>
+       <x>308</x>
+       <y>287</y>
+       <width>92</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#createor{
+
+border-radius: 10px;
+
+background-color: rgb(212, 250, 255);
+color: rgb(0,0,0);
+
+
+}
+QPushButton#createor:hover{
+	background-color: rgb(158, 239, 255);
+	
+color: rgb(255, 255, 255);
+
+
+	background-color: rgb(0, 123, 148);
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Create Or</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>196</x>
+       <y>70</y>
+       <width>113</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0,0,0);</string>
+     </property>
+     <property name="text">
+      <string> Choose path</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>399</x>
+       <y>70</y>
+       <width>113</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0,0,0);</string>
+     </property>
+     <property name="text">
+      <string>Current set</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addpath">
+     <property name="geometry">
+      <rect>
+       <x>203</x>
+       <y>203</y>
+       <width>50</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#addpath
+{
+border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));}
+
+
+QPushButton#addpath:hover{
+	background-color: rgb(212, 250, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Add</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="removepath">
+     <property name="geometry">
+      <rect>
+       <x>406</x>
+       <y>203</y>
+       <width>50</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#removepath
+{
+border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));}
+
+QPushButton#removepath:hover{
+	background-color: rgb(212, 250, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Remove</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="createand">
+     <property name="geometry">
+      <rect>
+       <x>308</x>
+       <y>252</y>
+       <width>92</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#createand{
+
+border-radius: 10px;
+
+background-color: rgb(212, 250, 255);
+color: rgb(0,0,0);
+
+
+}
+QPushButton#createand:hover{
+	background-color: rgb(158, 239, 255);
+	
+color: rgb(255, 255, 255);
+
+
+	background-color: rgb(0, 123, 148);
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Create And</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>287</x>
+       <y>14</y>
+       <width>162</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#label{ font: 16pt &quot;NSimSun&quot;;
+color: rgb(0,0,0);}</string>
+     </property>
+     <property name="text">
+      <string>And/Or path</string>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="home">
+     <property name="geometry">
+      <rect>
+       <x>42</x>
+       <y>7</y>
+       <width>36</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="tes.qrc">
+       <normaloff>home.png</normaloff>home.png</iconset>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="tes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

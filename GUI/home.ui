@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>659</width>
+    <height>373</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-7</x>
+      <y>-7</y>
+      <width>715</width>
+      <height>407</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QWidget#widget1{
+background-image: url(:/t/datascience.jpg);
+
+}
+</string>
+    </property>
+    <widget class="QCommandLinkButton" name="createrelation">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>42</y>
+       <width>148</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCommandLinkButton#createrelation{
+background-color: rgb(83, 179, 198);
+border-radius: 10px;}
+
+QCommandLinkButton#createrelation:hover{
+background-color: rgb(219, 247, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Create Relation</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../tes.qrc">
+       <normaloff>:/ok/relation.png</normaloff>:/ok/relation.png</iconset>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="createcontext">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>161</x>
+       <y>42</y>
+       <width>148</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+
+QCommandLinkButton#createcontext{
+background-color: rgb(83, 179, 198);
+border-radius: 10px;}
+
+QCommandLinkButton#createcontext:hover{
+background-color: rgb(219, 247, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Create Context</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../tes.qrc">
+       <normaloff>:/ok/search.png</normaloff>:/ok/search.png</iconset>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="createpath">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>112</y>
+       <width>148</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QCommandLinkButton#createpath{
+background-color: rgb(83, 179, 198);
+border-radius: 10px;}
+
+QCommandLinkButton#createpath:hover{
+background-color: rgb(219, 247, 255);
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Create Path</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>path.png</normaloff>path.png</iconset>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="createnode">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>161</x>
+       <y>189</y>
+       <width>148</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCommandLinkButton#createnode{background-color: rgb(83, 179, 198);
+border-style: outset;
+border-radius: 10px;}
+
+QCommandLinkButton#createnode:hover{
+background-color: rgb(219, 247, 255);
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Create Node</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>nodes.png</normaloff>nodes.png</iconset>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="drawnetwork">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>182</y>
+       <width>148</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+
+QCommandLinkButton#drawnetwork{
+background-color: rgb(83, 179, 198);
+border-radius: 10px;}
+
+QCommandLinkButton#drawnetwork:hover{
+background-color: rgb(219, 247, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Draw Network</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../tes.qrc">
+       <normaloff>:/ok/icons8-pencil-drawing-50.png</normaloff>:/ok/icons8-pencil-drawing-50.png</iconset>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="fbchainb">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>259</y>
+       <width>155</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+
+QCommandLinkButton#fbchainb{
+background-color: rgb(83, 179, 198);
+border-radius: 10px;}
+
+QCommandLinkButton#fbchainb:hover{
+background-color: rgb(219, 247, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>For/Backward Chain</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../tes.qrc">
+       <normaloff>:/ok/exchange.png</normaloff>:/ok/exchange.png</iconset>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="pathtor">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>161</x>
+       <y>259</y>
+       <width>148</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCommandLinkButton#pathtor{background-color: rgb(83, 179, 198);
+border-style: outset;
+border-radius: 10px;}
+
+QCommandLinkButton#pathtor:hover{
+background-color: rgb(219, 247, 255);
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Define path to relation</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/ok/icons8-nodes-60.png</normaloff>:/ok/icons8-nodes-60.png</iconset>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="viewcontexts">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>161</x>
+       <y>112</y>
+       <width>148</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCommandLinkButton#viewcontexts{background-color: rgb(83, 179, 198);
+border-style: outset;
+border-radius: 10px;}
+
+QCommandLinkButton#viewcontexts:hover{
+background-color: rgb(219, 247, 255);
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>View Contexts</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/ok/icons8-nodes-60.png</normaloff>:/ok/icons8-nodes-60.png</iconset>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../tes.qrc"/>
+  <include location="../new.qrc"/>
+  <include location="one.qrc"/>
+ </resources>
+ <connections/>
+</ui>

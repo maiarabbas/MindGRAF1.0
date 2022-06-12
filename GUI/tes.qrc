@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="ok">
+    <file>home.png</file>
+    <file>datascience.jpg</file>
+  </qresource>
+</RCC>

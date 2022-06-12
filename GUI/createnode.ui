@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>660</width>
+    <height>368</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget2" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>-7</x>
+      <y>0</y>
+      <width>1036</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#widget2{background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));}</string>
+    </property>
+    <widget class="QWidget" name="menuwidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>203</x>
+       <y>70</y>
+       <width>225</width>
+       <height>225</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#menuwidget{background-image: url(:/k/datascience.jpg);
+	background-image: url(:/k/img/datascience.jpg);
+border-radius: 10px;
+
+border-radius:7px;
+border: 3px solid #8ad2d5;
+}</string>
+     </property>
+     <widget class="QPushButton" name="base">
+      <property name="geometry">
+       <rect>
+        <x>56</x>
+        <y>42</y>
+        <width>106</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#base{
+border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));}
+
+QPushButton#base:hover{
+	background-color: rgb(228, 250, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Base</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="molecular">
+      <property name="geometry">
+       <rect>
+        <x>56</x>
+        <y>133</y>
+        <width>106</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#molecular{
+border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:0.994318, y1:1, x2:0, y2:0, stop:0 rgba(0, 162, 198, 255), stop:1 rgba(255, 255, 255, 255));}
+
+QPushButton#molecular:hover{
+	background-color: rgb(228, 250, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Molecular</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>98</x>
+        <y>91</y>
+        <width>22</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_8{ font: 12pt &quot;NSimSun&quot;;
+color: rgb(255,255,255);}</string>
+      </property>
+      <property name="text">
+       <string>OR</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>245</x>
+       <y>7</y>
+       <width>148</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#label{ font: 16pt &quot;NSimSun&quot;;
+color: rgb(0,0,0);}</string>
+     </property>
+     <property name="text">
+      <string>Create a node</string>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="home">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>0</y>
+       <width>36</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="tes.qrc">
+       <normaloff>:/ok/home.png</normaloff>:/ok/home.png</iconset>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="back">
+     <property name="geometry">
+      <rect>
+       <x>98</x>
+       <y>7</y>
+       <width>36</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCommandLinkButton{
+	background-color: rgb(210, 249, 255);
+
+border-style: outset;
+border-radius: 10px;
+
+}
+QCommandLinkButton:hover{
+	background-color: rgb(82, 159, 167);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Back to Chaining</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../tes.qrc">
+       <normaloff>:/ok/backarrow.png</normaloff>:/ok/backarrow.png</iconset>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../h.qrc"/>
+  <include location="tes.qrc"/>
+  <include location="../tes.qrc"/>
+ </resources>
+ <connections/>
+</ui>
